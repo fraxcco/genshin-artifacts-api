@@ -45,7 +45,7 @@ npm install -D
 
 #### Request
 ```javascript
-fetch(`http://localhost:8080/api/artifacts/archaic_petra`)
+fetch(`https://genshin-artifacts-api.onrender.com/api/artifacts/archaic_petra`)
     .then((res) => res.json())
     .then((data) => console.log(data))
     .catch((error) => console.log(error))
@@ -65,11 +65,11 @@ fetch(`http://localhost:8080/api/artifacts/archaic_petra`)
         "four": "If the wielder of this artifact set uses a Sword, Claymore or Polearm, increases their Normal Attack DMG by 35%."
     },
     "images": {
-        "flower": "http://localhost:8080/api/artifacts/gladiators_finale/images/flower",
-        "plume": "http://localhost:8080/api/artifacts/gladiators_finale/images/plume",
-        "sands": "http://localhost:8080/api/artifacts/gladiators_finale/images/sands",
-        "goblet": "http://localhost:8080/api/artifacts/gladiators_finale/images/goblet",
-        "circlet": "http://localhost:8080/api/artifacts/gladiators_finale/images/circlet"
+        "flower": "https://genshin-artifacts-api.onrender.com/api/artifacts/gladiators_finale/images/flower",
+        "plume": "https://genshin-artifacts-api.onrender.com/api/artifacts/gladiators_finale/images/plume",
+        "sands": "https://genshin-artifacts-api.onrender.com/api/artifacts/gladiators_finale/images/sands",
+        "goblet": "https://genshin-artifacts-api.onrender.com/api/artifacts/gladiators_finale/images/goblet",
+        "circlet": "https://genshin-artifacts-api.onrender.com/api/artifacts/gladiators_finale/images/circlet"
     }
 }
 ```

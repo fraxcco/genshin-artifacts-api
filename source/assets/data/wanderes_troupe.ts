@@ -12,10 +12,10 @@ export default new Artifact({
         four: "Increases Charged Attack DMG by 35% if the character uses a Catalyst or a Bow."
     },
     images: {
-        flower: "http://localhost:8080/api/artifacts/wanderes_troupe/images/flower",
-        plume: "http://localhost:8080/api/artifacts/wanderes_troupe/images/plume",
-        sands: "http://localhost:8080/api/artifacts/wanderes_troupe/images/sands",
-        goblet: "http://localhost:8080/api/artifacts/wanderes_troupe/images/goblet",
-        circlet: "http://localhost:8080/api/artifacts/wanderes_troupe/images/circlet"
+        flower: "https://genshin-artifacts-api.onrender.com/api/artifacts/wanderes_troupe/images/flower",
+        plume: "https://genshin-artifacts-api.onrender.com/api/artifacts/wanderes_troupe/images/plume",
+        sands: "https://genshin-artifacts-api.onrender.com/api/artifacts/wanderes_troupe/images/sands",
+        goblet: "https://genshin-artifacts-api.onrender.com/api/artifacts/wanderes_troupe/images/goblet",
+        circlet: "https://genshin-artifacts-api.onrender.com/api/artifacts/wanderes_troupe/images/circlet"
     },
 });
