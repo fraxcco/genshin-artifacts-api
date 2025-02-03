@@ -45,7 +45,7 @@ npm install -D
 
 #### Request
 ```javascript
-fetch(`https://genshin-artifacts-api.onrender.com/api/artifacts/archaic_petra`)
+fetch(`https://genshin-artifacts-api.onrender.com/api/artifacts/gladiators_finale`)
     .then((res) => res.json())
     .then((data) => console.log(data))
     .catch((error) => console.log(error))
