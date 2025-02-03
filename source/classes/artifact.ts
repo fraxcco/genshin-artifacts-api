@@ -22,6 +22,7 @@ interface ArtifactOptions {
 export class Artifact {
     public name: ArtifactOptions[`name`];
     public domain: ArtifactOptions[`domain`];
+    public version: ArtifactOptions[`version`];
     public rarity: ArtifactOptions[`rarity`];
     public bonusPieces: ArtifactOptions[`bonusPieces`];
     public images: ArtifactOptions[`images`];
