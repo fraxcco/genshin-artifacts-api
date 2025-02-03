@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "CommonJS",
+        "skipLibCheck": true,
+        "noUnusedLocals": true,
+        "esModuleInterop": true,
+        "noImplicitReturns": true,
+        "resolveJsonModule": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "strictPropertyInitialization": false,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+    },
+
+    "include": ["source/**/*"],
+    "exclude": ["node_modules"],
+}

@@ -1,0 +1,29 @@
+{
+	"Artifact Structure": {
+		"prefix": "!act",
+		"body": [
+			"import { Artifact } from \"../../modules/artifact\";",
+			"",
+			"export default new Artifact({",
+			"    name: \"\",",
+			"    domain: \"\",",
+			"    rarity: {",
+			"        minimun: 4,",
+			"        maximum: 5,",
+			"    },",
+			"    bonusPieces: {",
+			"        two: \"\",",
+			"        four: \"\"",
+			"    },",
+			"    images: {",
+			"        flower: \"http://localhost:8080/api/artifacts//images/flower\",",
+			"        plume: \"http://localhost:8080/api/artifacts//images/plume\",",
+			"        sands: \"http://localhost:8080/api/artifacts//images/sands\",",
+			"        goblet: \"http://localhost:8080/api/artifacts//images/goblet\"",
+			"        circlet: \"http://localhost:8080/api/artifacts//images/circlet\"",
+			"    },",
+			"});"
+		],
+		"description": "Artifact Structure"
+	}
+}
