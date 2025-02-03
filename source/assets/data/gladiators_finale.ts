@@ -3,8 +3,9 @@ import { Artifact } from "../../classes/artifact";
 export default new Artifact({
     name: "Gladiator's Finale",
     domain: "Bosses (at World Level 2 and above)",
+    version: "1.0",
     rarity: {
-        minimun: 4,
+        minimum: 4,
         maximum: 5,
     },
     bonusPieces: {

@@ -2,13 +2,14 @@
 	"Artifact Structure": {
 		"prefix": "!act",
 		"body": [
-			"import { Artifact } from \"../../modules/artifact\";",
+			"import { Artifact } from \"../../classes/artifact\";",
 			"",
 			"export default new Artifact({",
 			"    name: \"\",",
 			"    domain: \"\",",
+			"    version: \"\",",
 			"    rarity: {",
-			"        minimun: 4,",
+			"        minimum: 4,",
 			"        maximum: 5,",
 			"    },",
 			"    bonusPieces: {",
@@ -19,7 +20,7 @@
 			"        flower: \"https://genshin-artifacts-api.onrender.com/api/artifacts//images/flower\",",
 			"        plume: \"https://genshin-artifacts-api.onrender.com/api/artifacts//images/plume\",",
 			"        sands: \"https://genshin-artifacts-api.onrender.com/api/artifacts//images/sands\",",
-			"        goblet: \"https://genshin-artifacts-api.onrender.com/api/artifacts//images/goblet\"",
+			"        goblet: \"https://genshin-artifacts-api.onrender.com/api/artifacts//images/goblet\",",
 			"        circlet: \"https://genshin-artifacts-api.onrender.com/api/artifacts//images/circlet\"",
 			"    },",
 			"});"

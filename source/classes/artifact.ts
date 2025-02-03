@@ -1,8 +1,9 @@
 interface ArtifactOptions {
     name: string;
     domain: string;
+    version: string;
     rarity: {
-        minimun: number;
+        minimum: number;
         maximum: number;
     };
     bonusPieces: { 

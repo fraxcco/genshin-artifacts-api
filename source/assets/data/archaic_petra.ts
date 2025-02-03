@@ -3,8 +3,9 @@ import { Artifact } from "../../classes/artifact";
 export default new Artifact({
     name: "Archaic Petra",
     domain: "Domain of Guyun",
+    version: "1.0",
     rarity: {
-        minimun: 4,
+        minimum: 4,
         maximum: 5,
     },
     bonusPieces: {
