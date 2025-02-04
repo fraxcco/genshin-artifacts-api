@@ -12,6 +12,7 @@ export class ArtifactsRouter {
     };
 
     private routes() {
+        this.router.get(`/`, this.controller.artifactsEndpoints);
         this.router.get(`/all`, this.controller.getAllArtifacts);
         this.router.get(`/:name`, this.controller.getArtifactByName);
         this.router.get(`/:name/images/:type`, this.controller.getArtifactImagesByName);

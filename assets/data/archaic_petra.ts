@@ -1,4 +1,4 @@
-import { Artifact } from "../../classes/artifact";
+import { Artifact } from "../../source/classes/artifact";
 
 export default new Artifact({
     name: "Archaic Petra",

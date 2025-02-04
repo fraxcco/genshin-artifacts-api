@@ -3,13 +3,38 @@ import { Request, Response } from "express";
 import path from "path";
 
 export class ArtifactsController {
-    private dataDir = path.join(__dirname, `../assets/data`);
-    private imagesDir = path.join(__dirname, `../assets/images`);
+    private dataDir = path.join(__dirname, `../../assets/data`);
+    private imagesDir = path.join(__dirname, `../../assets/images`);
 
     constructor() {
         this.getAllArtifacts = this.getAllArtifacts.bind(this);
         this.getArtifactByName = this.getArtifactByName.bind(this);
         this.getArtifactImagesByName = this.getArtifactImagesByName.bind(this);
+    };
+
+    public artifactsEndpoints(_req: Request, res: Response) {
+        try {
+            res.json({
+                endpoints: [
+                    {
+                        endpoint: "/all/",
+                        request_example: "/api/artifacts/all",
+                    },
+                    {
+                        endpoint: "/:name",
+                        request_example: "/api/artifacts/obsidian_codex"
+                    },
+                    {
+                        endpoint: "/:name/images/:type",
+                        request_example: "/api/artifacts/obsidian_codex/images/flower"
+                    }
+                ],
+            });
+        } catch(error) {
+            console.log(error);
+
+            res.status(500).json({ message: `Internal server error.` });
+        };
     };
 
     public getAllArtifacts(_req: Request, res: Response) {

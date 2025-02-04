@@ -1,6 +1,9 @@
 require(`dotenv`).config();
 import express, { Express } from "express";
+
 import { ArtifactsRouter } from "./routes/artifacts.routes";
+import { RedirectRouter } from "./routes/redirect.router";
+import { APIRouter } from "./routes/api.router";
 
 export class Server {
     private client: Express;
@@ -19,6 +22,8 @@ export class Server {
     };
 
     private routes() {
+        this.client.use("/", new RedirectRouter().getRouter());
+        this.client.use("/api/", new APIRouter().getRouter());
         this.client.use(`/api/artifacts/`, new ArtifactsRouter().getRouter());
     };
 
